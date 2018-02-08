@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+body{
+
+}
+
+h1{
+  font-weight: bold;
+  color: pink;
+}
+
+p {
+  max-width: 600px
+}
+
+footer > a {
+  color: #BBBBBB
+}
+
+.nicejob {
+
+}

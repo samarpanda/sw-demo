@@ -1,0 +1,21 @@
+{
+  "name": "sw-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "1.18.2",
+    "colors": "1.1.2",
+    "cors": "2.8.4",
+    "express": "4.16.2",
+    "lodash": "4.17.5",
+    "method-override": "2.3.10",
+    "morgan": "1.9.0"
+  },
+  "repository": "git@github.com:samarpanda/sw-demo.git",
+  "author": "Samar Panda <er.samarpanda@gmail.com> (https://samarpanda.com/)",
+  "license": "MIT"
+}
