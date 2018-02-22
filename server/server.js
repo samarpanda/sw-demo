@@ -8,16 +8,17 @@ var fs = require('fs');
 var path = require('path');
 
 // Point to static files directory
-var distDir = path.join(__dirname, '..', 'frontend')
+var distDir = path.join(__dirname, '..', 'frontend','build')
 app.use(express.static(distDir))
 
-// app.get('/', function(req, res){
-//   console.log('Yo')
-//   var indexHtmlPath = path.join(__dirname, '..', 'frontend', 'index.html')
-//   res.sendFile(indexHtmlPath)
-// })
 
 app.use('/api', api)
+
+app.get('*', function(req, res){
+  console.log('Yo')
+  var indexHtmlPath = path.join(__dirname, '..', 'frontend', 'build', 'index.html')
+  res.sendFile(indexHtmlPath)
+});
 
 app.use(function(err, req, res, next){
   if(err.name === 'UnauthorizedError'){
